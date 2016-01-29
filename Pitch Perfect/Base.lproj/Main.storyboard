@@ -40,6 +40,13 @@
                                     <action selector="playFastAudio:" destination="pE0-gF-k0E" eventType="touchUpInside" id="jcJ-EU-vIa"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGk-HD-OQu">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="chipmunkbutton"/>
+                                <connections>
+                                    <action selector="playChipmunkAudio:" destination="pE0-gF-k0E" eventType="touchUpInside" id="YNl-cr-DaQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -49,20 +56,25 @@
                             <constraint firstAttribute="trailingMargin" secondItem="tFv-Zy-Pz0" secondAttribute="trailing" constant="25" id="ZuQ-tq-0Kr"/>
                             <constraint firstItem="zPa-b5-EMX" firstAttribute="centerX" secondItem="EAK-KY-IMW" secondAttribute="centerX" id="g2M-sa-5Kg"/>
                             <constraint firstItem="tFv-Zy-Pz0" firstAttribute="top" secondItem="aMs-jR-AYg" secondAttribute="bottom" constant="55" id="nN4-hS-qrW"/>
+                            <constraint firstItem="xGk-HD-OQu" firstAttribute="leading" secondItem="EAK-KY-IMW" secondAttribute="leadingMargin" constant="25" id="riE-ic-YN2"/>
+                            <constraint firstItem="OOK-9T-NSA" firstAttribute="top" secondItem="xGk-HD-OQu" secondAttribute="bottom" constant="183" id="vgL-Ww-jQN"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="72L-ET-JMa"/>
                                 <exclude reference="zPa-b5-EMX"/>
                                 <exclude reference="tFv-Zy-Pz0"/>
+                                <exclude reference="xGk-HD-OQu"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="AFX-b9-xPr"/>
                                 <exclude reference="Elr-Il-aZa"/>
                                 <exclude reference="KrT-cT-WgX"/>
                                 <exclude reference="ZuQ-tq-0Kr"/>
                                 <exclude reference="nN4-hS-qrW"/>
+                                <exclude reference="riE-ic-YN2"/>
                                 <exclude reference="g2M-sa-5Kg"/>
+                                <exclude reference="AFX-b9-xPr"/>
+                                <exclude reference="vgL-Ww-jQN"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -70,14 +82,17 @@
                                 <include reference="72L-ET-JMa"/>
                                 <include reference="zPa-b5-EMX"/>
                                 <include reference="tFv-Zy-Pz0"/>
+                                <include reference="xGk-HD-OQu"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="AFX-b9-xPr"/>
                                 <include reference="Elr-Il-aZa"/>
                                 <include reference="KrT-cT-WgX"/>
                                 <include reference="ZuQ-tq-0Kr"/>
                                 <include reference="nN4-hS-qrW"/>
+                                <include reference="riE-ic-YN2"/>
                                 <include reference="g2M-sa-5Kg"/>
+                                <include reference="AFX-b9-xPr"/>
+                                <include reference="vgL-Ww-jQN"/>
                             </mask>
                         </variation>
                     </view>
@@ -193,6 +208,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chipmunkbutton" width="100" height="100"/>
         <image name="fastbutton" width="100" height="100"/>
         <image name="microphone" width="100" height="100"/>
         <image name="slowbutton" width="100" height="100"/>
